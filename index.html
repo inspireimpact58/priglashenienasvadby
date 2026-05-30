@@ -428,22 +428,31 @@ body {
   .face {
     display: block;
     width: 46%;
-    background-image: url("приглашения/готовое/готовое лицевое.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-image: none;
   }
 
   .face-left {
-    background-position: left top;
+    left: 0;
   }
 
   .face-right {
-    background-position: right top;
+    right: 0;
     left: auto;
   }
 
   .face img {
-    display: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .face-left img {
+    object-position: 72% center;
+  }
+
+  .face-right img {
+    object-position: 28% center;
   }
 
   .face-left::after {

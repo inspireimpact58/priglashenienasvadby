@@ -427,7 +427,7 @@ body {
 
   .face {
     display: block;
-    width: 46%;
+    width: 49%;
     background-image: none;
   }
 
@@ -448,19 +448,19 @@ body {
   }
 
   .face-left img {
-    object-position: 72% center;
+    object-position: 56% center;
   }
 
   .face-right img {
-    object-position: 28% center;
+    object-position: 44% center;
   }
 
   .face-left::after {
     background: linear-gradient(to right,
       transparent 0%,
-      transparent 42%,
-      rgba(22,20,18,.42) 72%,
-      rgba(22,20,18,.88) 92%,
+      transparent 50%,
+      rgba(22,20,18,.34) 76%,
+      rgba(22,20,18,.82) 94%,
       var(--dark) 100%
     );
   }
@@ -468,9 +468,9 @@ body {
   .face-right::after {
     background: linear-gradient(to left,
       transparent 0%,
-      transparent 42%,
-      rgba(22,20,18,.42) 72%,
-      rgba(22,20,18,.88) 92%,
+      transparent 50%,
+      rgba(22,20,18,.34) 76%,
+      rgba(22,20,18,.82) 94%,
       var(--dark) 100%
     );
   }
@@ -572,6 +572,18 @@ body {
   .card1 {
     min-height: 600px;
     height: min(720px, 154vw);
+  }
+
+  .face {
+    width: 50%;
+  }
+
+  .face-left img {
+    object-position: 54% center;
+  }
+
+  .face-right img {
+    object-position: 46% center;
   }
 
   .c1-center {

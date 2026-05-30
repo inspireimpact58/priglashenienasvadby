@@ -433,11 +433,31 @@ body {
     display: none;
   }
 
+  .card1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--mobile-portrait-h);
+    z-index: 7;
+    background: linear-gradient(to right,
+      transparent 0%,
+      transparent 31%,
+      rgba(22,20,18,.72) 43%,
+      rgba(22,20,18,.96) 50%,
+      rgba(22,20,18,.72) 57%,
+      transparent 69%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }
+
   .face {
     display: block;
     top: 0;
     height: var(--mobile-portrait-h);
-    width: 50%;
+    width: 54%;
     background-image: none;
   }
 
@@ -458,11 +478,11 @@ body {
   }
 
   .face-left img {
-    object-position: 50% center;
+    object-position: 58% center;
   }
 
   .face-right img {
-    object-position: 50% center;
+    object-position: 42% center;
   }
 
   .face-left::after {
@@ -470,8 +490,8 @@ body {
       linear-gradient(to bottom, transparent 0%, transparent 70%, var(--dark) 100%),
       linear-gradient(to right,
         transparent 0%,
-        transparent 64%,
-        rgba(22,20,18,.38) 86%,
+        transparent 72%,
+        rgba(22,20,18,.28) 90%,
         var(--dark) 100%
       );
   }
@@ -481,8 +501,8 @@ body {
       linear-gradient(to bottom, transparent 0%, transparent 70%, var(--dark) 100%),
       linear-gradient(to left,
         transparent 0%,
-        transparent 64%,
-        rgba(22,20,18,.38) 86%,
+        transparent 72%,
+        rgba(22,20,18,.28) 90%,
         var(--dark) 100%
       );
   }
@@ -581,15 +601,15 @@ body {
   }
 
   .face {
-    width: 50%;
+    width: 55%;
   }
 
   .face-left img {
-    object-position: 50% center;
+    object-position: 60% center;
   }
 
   .face-right img {
-    object-position: 50% center;
+    object-position: 40% center;
   }
 
   .c1-center {

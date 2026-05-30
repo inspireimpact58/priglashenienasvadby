@@ -441,15 +441,21 @@ body {
     right: 0;
     height: var(--mobile-portrait-h);
     z-index: 7;
-    background: linear-gradient(to right,
-      transparent 0%,
-      transparent 31%,
-      rgba(22,20,18,.72) 43%,
-      rgba(22,20,18,.96) 50%,
-      rgba(22,20,18,.72) 57%,
-      transparent 69%,
-      transparent 100%
-    );
+    background:
+      radial-gradient(ellipse at 50% 52%,
+        rgba(22,20,18,1) 0%,
+        rgba(22,20,18,1) 12%,
+        transparent 30%
+      ),
+      linear-gradient(to right,
+        transparent 0%,
+        transparent 27%,
+        rgba(22,20,18,.8) 39%,
+        rgba(22,20,18,1) 50%,
+        rgba(22,20,18,.8) 61%,
+        transparent 73%,
+        transparent 100%
+      );
     pointer-events: none;
   }
 
